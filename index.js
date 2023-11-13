@@ -1,4 +1,3 @@
-// AJAX call from json file to fetch user's review
 fetch("testimonials.json")
     .then(response => response.json())
     .then(data => {
@@ -59,7 +58,6 @@ form.addEventListener('submit', async (e) => {
         return;
     }
 
-    // Submit form data via AJAX
     try {
         const response = await fetch('/contact', {
             method: 'POST',
